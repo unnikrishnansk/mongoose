@@ -20,7 +20,7 @@ app.post("/addmovies", async (req, res) => {
     await movie.save()
     res.send(movie)
 })
-
+console.log("hello");
 app.listen(8000, async () => {
     try{
         await connection
@@ -29,6 +29,6 @@ app.listen(8000, async () => {
     catch(err){
         console.log("Error connecting to db")
         console.log(err)
-    }
+    }le
     console.log("Listening at 8000")
 })
